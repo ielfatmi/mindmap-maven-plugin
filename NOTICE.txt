@@ -1,0 +1,8 @@
+Xebia [mindmap-maven-plugin]
+Copyright [2011] Xebia and the original author or authors.
+
+This product includes/uses software, Apache Velocity Engine (http://velocity.apache.org/engine/index.html),
+developed by The Apache Velocity Project  (http://velocity.apache.org/)
+License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+
