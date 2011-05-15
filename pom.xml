@@ -23,7 +23,7 @@
 	<packaging>maven-plugin</packaging>
 	<groupId>fr.xebia.maven.plugins</groupId>
 	<artifactId>mindmap-maven-plugin</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>Maven dependency :: ${project.artifactId} ${project.packaging}</name>
 	<description>
         This plugin generates a MindMap from the project
@@ -44,9 +44,9 @@
         mvn fr.xebia.maven.plugins:mindmap-maven-plugin:1.0.0-SNAPSHOT:mindmap -DgroupIdsFilteringREGEXMatch=fr.xebia
     </description>
 	<scm>
-		<connection>scm:svn:http://xebia-france.googlecode.com/svn/maven/plugins/mindmap-maven-plugin/tags/mindmap-maven-plugin-1.0.0</connection>
-		<developerConnection>scm:svn:https://xebia-france.googlecode.com/svn/maven/plugins/mindmap-maven-plugin/tags/mindmap-maven-plugin-1.0.0</developerConnection>
-		<url>http://xebia-france.googlecode.com/svn/maven/plugins/mindmap-maven-plugin/tags/mindmap-maven-plugin-1.0.0</url>
+		<connection>scm:svn:http://xebia-france.googlecode.com/svn/maven/plugins/mindmap-maven-plugin/trunk</connection>
+		<developerConnection>scm:svn:https://xebia-france.googlecode.com/svn/maven/plugins/mindmap-maven-plugin/trunk</developerConnection>
+		<url>http://xebia-france.googlecode.com/svn/maven/plugins/mindmap-maven-plugin/</url>
 	</scm>
 	<build>
 		<plugins>
