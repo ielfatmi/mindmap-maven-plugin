@@ -117,19 +117,20 @@
 			<version>2.0</version>
 		</dependency>
 	</dependencies>
-	   <developers>
-      <developer>
-         <id>issam</id>
-         <name>Issam EL FATMI</name>
-         <email>elfatmi.issam@gmail.com</email>
-      </developer>
-   </developers>
-   <licenses>
-      <license>
-         <name>Apache 2</name>
-         <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-         <distribution>repo</distribution>
-         <comments>A business-friendly OSS license</comments>
-      </license>
-   </licenses>
+	<url>http://code.google.com/p/xebia-france/wiki/MindmapMavenPlugin</url>
+	<developers>
+		<developer>
+			<id>issam</id>
+			<name>Issam EL FATMI</name>
+			<email>elfatmi.issam@gmail.com</email>
+		</developer>
+	</developers>
+	<licenses>
+		<license>
+			<name>Apache 2</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+			<comments>A business-friendly OSS license</comments>
+		</license>
+	</licenses>
 </project>
