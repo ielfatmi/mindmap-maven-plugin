@@ -13,7 +13,9 @@
 <!-- See the License for the specific language governing permissions and -->
 <!-- limitations under the License. -->
 <!-- -->
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
@@ -23,7 +25,7 @@
 	<packaging>maven-plugin</packaging>
 	<groupId>fr.xebia.maven.plugins</groupId>
 	<artifactId>mindmap-maven-plugin</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.0-SNAPSHOT</version>
 	<name>Maven dependency :: ${project.artifactId} ${project.packaging}</name>
 	<description>
         This plugin generates a MindMap from the project
@@ -43,6 +45,11 @@
         with filtering :
         mvn fr.xebia.maven.plugins:mindmap-maven-plugin:1.0.0-SNAPSHOT:mindmap -DgroupIdsFilteringREGEXMatch=fr.xebia
     </description>
+	<scm>
+		<connection>scm:svn:http://xebia-france.googlecode.com/svn/maven/plugins/mindmap-maven-plugin/trunk</connection>
+		<developerConnection>scm:svn:https://xebia-france.googlecode.com/svn/maven/plugins/mindmap-maven-plugin/trunk</developerConnection>
+		<url>http://xebia-france.googlecode.com/svn/maven/plugins/mindmap-maven-plugin/</url>
+	</scm>
 	<build>
 		<plugins>
 			<plugin>
@@ -110,10 +117,19 @@
 			<version>2.0</version>
 		</dependency>
 	</dependencies>
-
-  <scm>
-    <connection>scm:svn:http://svn.sonatype.org/spice/tags/mindmap-maven-plugin-1.0.0</connection>
-    <developerConnection>scm:svn:https://svn.sonatype.org/spice/tags/mindmap-maven-plugin-1.0.0</developerConnection>
-    <url>http://svn.sonatype.org/spice/tags/mindmap-maven-plugin-1.0.0</url>
-  </scm>
+	   <developers>
+      <developer>
+         <id>issam</id>
+         <name>Issam EL FATMI</name>
+         <email>elfatmi.issam@gmail.com</email>
+      </developer>
+   </developers>
+   <licenses>
+      <license>
+         <name>Apache 2</name>
+         <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+         <distribution>repo</distribution>
+         <comments>A business-friendly OSS license</comments>
+      </license>
+   </licenses>
 </project>
