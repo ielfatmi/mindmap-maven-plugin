@@ -18,7 +18,7 @@
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
 		<artifactId>oss-parent</artifactId>
-		<version>5</version>
+		<version>7</version>
 	</parent>
 	<packaging>maven-plugin</packaging>
 	<groupId>fr.xebia.maven.plugins</groupId>
@@ -26,23 +26,23 @@
 	<version>1.0.1-SNAPSHOT</version>
 	<name>Maven dependency :: ${project.artifactId} ${project.packaging}</name>
 	<description>
-        This plugin generates a MindMap from the project
-        dependencies. The mindmap file (with the '.mm' extension)
-        can be viewed with Freeplane (free tool).
+		  This plugin generates a MindMap from the project
+		  dependencies. The mindmap file (with the '.mm' extension)
+		  can be viewed with Freeplane (free tool).
 
-        By default, the mindmap shows the full dependency tree.
+		  By default, the mindmap shows the full dependency tree.
 
-        You can filter this tree at generation time 
-        by artifact's group id, by providing a parameter
-         'groupIdsFilteringREGEXMatch'
-        setted with a groupId name fragment (a startswith will be performed).
+		  You can filter this tree at generation time 
+		  by artifact's group id, by providing a parameter
+			'groupIdsFilteringREGEXMatch'
+		  setted with a groupId name fragment (a startswith will be performed).
 
-        Usage is (for exemple) :
-        mvn fr.xebia.maven.plugins:mindmap-maven-plugin:1.0.0-SNAPSHOT:mindmap
+		  Usage is (for exemple) :
+		  mvn fr.xebia.maven.plugins:mindmap-maven-plugin:1.0.0-SNAPSHOT:mindmap
 
-        with filtering :
-        mvn fr.xebia.maven.plugins:mindmap-maven-plugin:1.0.0-SNAPSHOT:mindmap -DgroupIdsFilteringREGEXMatch=fr.xebia
-    </description>
+		  with filtering :
+		  mvn fr.xebia.maven.plugins:mindmap-maven-plugin:1.0.0-SNAPSHOT:mindmap -DgroupIdsFilteringREGEXMatch=fr.xebia
+	 </description>
 	<scm>
 		<connection>scm:svn:http://xebia-france.googlecode.com/svn/maven/plugins/mindmap-maven-plugin/trunk</connection>
 		<developerConnection>scm:svn:https://xebia-france.googlecode.com/svn/maven/plugins/mindmap-maven-plugin/trunk</developerConnection>
@@ -72,6 +72,11 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>3.0-beta-3</version>
+			</plugin>
 		</plugins>
 		<resources>
 			<resource>
@@ -94,6 +99,16 @@
 				<groupId>org.apache.rat</groupId>
 				<artifactId>apache-rat-plugin</artifactId>
 				<version>0.7</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-plugin-plugin</artifactId>
+				<version>2.7</version>
+			</plugin>
+			<plugin>
+			   <groupId>org.apache.maven.plugins</groupId>
+			   <artifactId>maven-project-info-reports-plugin</artifactId>
+			   <version>2.4</version>
 			</plugin>
 		</plugins>
 	</reporting>
