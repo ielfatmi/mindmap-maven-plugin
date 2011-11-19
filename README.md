@@ -46,7 +46,7 @@ Standalone usage examples
 Documentations
 --------
    
-Plugin documentations:
+Plugin documentation:
 [http://ielfatmi.github.com/mindmap-maven-plugin/plugin-info.html](http://ielfatmi.github.com/mindmap-maven-plugin/plugin-info.html).
 
 Maven site: 
