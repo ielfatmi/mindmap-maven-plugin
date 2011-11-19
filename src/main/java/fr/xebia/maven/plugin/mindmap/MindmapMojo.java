@@ -78,13 +78,16 @@ public class MindmapMojo extends AbstractMojo {
      */
     private String groupIdsFilteringREGEXMatch = null;
 
+    /**
+     * {@inheritDoc}
+     */
     public void execute() throws MojoExecutionException {
         try {
             ArtifactFilter artifactFilter = new ScopeArtifactFilter(null);
             // Build project dependency tree
             DependencyNode rootNode = treeBuilder.buildDependencyTree(project,
-                    localRepository, artifactFactory, artifactMetadataSource,
-                    artifactFilter, artifactCollector);
+                            localRepository, artifactFactory, artifactMetadataSource,
+                            artifactFilter, artifactCollector);
 
             generateMindMapXML(project, rootNode);
 
@@ -101,7 +104,7 @@ public class MindmapMojo extends AbstractMojo {
             Properties p = new Properties();
             p.setProperty("resource.loader", "class");
             p.setProperty("class.resource.loader.class",
-            "org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader");
+                            "org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader");
 
             //  first, get and initialize an engine
             VelocityEngine ve = new VelocityEngine();
@@ -116,9 +119,9 @@ public class MindmapMojo extends AbstractMojo {
             context.put("artifactId", mavenProject.getArtifactId());
             context.put("sorter", new SortTool());
             context.put("rootNode", rootNode);
-            context.put("date", (new SimpleDateFormat("dd/MM/yy HH:mm")).format(Calendar.getInstance().getTime()));
+            context.put("date", new SimpleDateFormat("dd/MM/yy HH:mm").format(Calendar.getInstance().getTime()));
 
-            context.put("groupIdsFilteringREGEXMatch", (groupIdsFilteringREGEXMatch != null)?groupIdsFilteringREGEXMatch:"");
+            context.put("groupIdsFilteringREGEXMatch", groupIdsFilteringREGEXMatch != null?groupIdsFilteringREGEXMatch:"");
 
             context.put("creationTS", Calendar.getInstance().getTimeInMillis());
 
