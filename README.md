@@ -46,10 +46,10 @@ Standalone usage examples
 Documentations
 --------
    
-    Plugin documentations:
+Plugin documentations:
 [http://ielfatmi.github.com/mindmap-maven-plugin/plugin-info.html](http://ielfatmi.github.com/mindmap-maven-plugin/plugin-info.html).
-    Maven site: 
+Maven site: 
 [http://ielfatmi.github.com/mindmap-maven-plugin/](http://ielfatmi.github.com/mindmap-maven-plugin/).
-    JavaDocs: 
+JavaDocs: 
 [http://ielfatmi.github.com/mindmap-maven-plugin/apidocs/index.html](http://ielfatmi.github.com/mindmap-maven-plugin/apidocs/index.html)
 	
