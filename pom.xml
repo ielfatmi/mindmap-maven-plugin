@@ -43,11 +43,16 @@
 
 		  with filtering :
 		  mvn fr.xebia.maven.plugins:mindmap-maven-plugin:1.0.0-SNAPSHOT:mindmap -DgroupIdsFilteringREGEXMatch=fr.xebia
-	 </description>
+  </description>
+  <url>https://github.com/ielfatmi/mindmap-maven-plugin</url>
+  <issueManagement>
+    <url>https://github.com/ielfatmi/mindmap-maven-plugin/issues</url>
+    <system>GitHub Issues</system>
+  </issueManagement>
   <scm>
-    <connection>scm:svn:http://xebia-france.googlecode.com/svn/maven/plugins/mindmap-maven-plugin/trunk</connection>
-    <developerConnection>scm:svn:https://xebia-france.googlecode.com/svn/maven/plugins/mindmap-maven-plugin/trunk</developerConnection>
-    <url>http://xebia-france.googlecode.com/svn/maven/plugins/mindmap-maven-plugin/</url>
+    <connection>scm:git:git@github.com:ielfatmi/mindmap-maven-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:ielfatmi/mindmap-maven-plugin.git</developerConnection>
+    <url>https://github.com/ielfatmi/mindmap-maven-plugin</url>
   </scm>
   <build>
     <extensions>
@@ -100,7 +105,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
-        <version>3.0-beta-3</version>
+        <version>3.0</version>
         <dependencies>
           <dependency>
             <groupId>org.apache.maven.doxia</groupId>
@@ -146,6 +151,11 @@
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <version>2.4</version>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.7</version>
+      </plugin>
     </plugins>
   </reporting>
   <dependencies>
@@ -166,14 +176,17 @@
       <version>2.0</version>
     </dependency>
   </dependencies>
-  <url>http://code.google.com/p/xebia-france/wiki/MindmapMavenPlugin</url>
   <developers>
     <developer>
-      <id>issam</id>
-      <name>Issam EL FATMI</name>
       <email>elfatmi.issam@gmail.com</email>
+      <name>Issam EL FATMI</name>
+      <url>https://github.com/ielfatmi</url>
+      <id>ielfatmi</id>
     </developer>
   </developers>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
   <licenses>
     <license>
       <name>Apache 2</name>
@@ -182,11 +195,4 @@
       <comments>A business-friendly OSS license</comments>
     </license>
   </licenses>
-  <distributionManagement>
-    <site>
-      <id>xebia-france.googlecode.com</id>
-      <name>xebia-france googlecode</name>
-      <url>scm:svn:https://xebia-france.googlecode.com/svn/docs/mindmap-maven-plugin/</url>
-    </site>
-  </distributionManagement>
 </project>
