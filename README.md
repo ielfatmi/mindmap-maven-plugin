@@ -10,7 +10,7 @@ Downloads
 --------
 
 The plugin is available in maven central repository:
-http://repo2.maven.org/maven2/fr/xebia/maven/plugins/mindmap-maven-plugin/
+[http://repo2.maven.org/maven2/fr/xebia/maven/plugins/mindmap-maven-plugin/](http://repo2.maven.org/maven2/fr/xebia/maven/plugins/mindmap-maven-plugin/).
 
 
 Integrating with Maven's build lifecycle
@@ -42,4 +42,11 @@ Standalone usage examples
 
 	with filtering :
 	mvn fr.xebia.maven.plugins:mindmap-maven-plugin:1.0.0-SNAPSHOT:mindmap -DgroupIdsFilteringREGEXMatch=fr.xebia
+	
+Documentations
+--------
+   
+    Plugin documentations: [http://ielfatmi.github.com/mindmap-maven-plugin/plugin-info.html](http://ielfatmi.github.com/mindmap-maven-plugin/plugin-info.html).
+    Maven site: [http://ielfatmi.github.com/mindmap-maven-plugin/](http://ielfatmi.github.com/mindmap-maven-plugin/).
+    JavaDocs: [http://ielfatmi.github.com/mindmap-maven-plugin/apidocs/index.html](http://ielfatmi.github.com/mindmap-maven-plugin/apidocs/index.html)
 	
