@@ -78,7 +78,7 @@ Summary
 Notes: 2
 Binaries: 3
 Archives: 0
-Standards: 31
+Standards: 26
 
 Apache Licensed: 3
 Generated Documents: 0
@@ -86,14 +86,13 @@ Generated Documents: 0
 JavaDocs are generated and so license header is optional
 Generated files do not required license headers
 
-28 Unknown Licenses
+23 Unknown Licenses
 
 *******************************
 
 Unapproved licenses:
 
   .externalToolBuilders/Maven_Ant_Builder.launch
-  .git/COMMIT_EDITMSG
   .git/config
   .git/description
   .git/HEAD
@@ -110,13 +109,9 @@ Unapproved licenses:
   .git/info/exclude
   .git/logs/HEAD
   .git/logs/refs/heads/master
-  .git/logs/refs/remotes/origin/master
-  .git/objects/0b/be17671e2453dbd83843e81e7e95e5eab37401
-  .git/objects/52/2f31cbae2ba9c32bbe0f4ede0a274adcfa00b0
-  .git/objects/58/1daee47ff22c1ba52a475b3cf4c53cde6a3161
   .git/packed-refs
   .git/refs/heads/master
-  .git/refs/remotes/origin/master
+  .git/refs/remotes/origin/HEAD
   .gitignore
   maven-eclipse.xml
   README.md
@@ -131,7 +126,6 @@ Archives:
   Compressed archives will be marked A
   Notices, licenses etc will be marked N
  !????? .externalToolBuilders/Maven_Ant_Builder.launch
- !????? .git/COMMIT_EDITMSG
  !????? .git/config
  !????? .git/description
  !????? .git/HEAD
@@ -149,15 +143,11 @@ Archives:
  !????? .git/info/exclude
  !????? .git/logs/HEAD
  !????? .git/logs/refs/heads/master
- !????? .git/logs/refs/remotes/origin/master
- !????? .git/objects/0b/be17671e2453dbd83843e81e7e95e5eab37401
- !????? .git/objects/52/2f31cbae2ba9c32bbe0f4ede0a274adcfa00b0
- !????? .git/objects/58/1daee47ff22c1ba52a475b3cf4c53cde6a3161
-  B     .git/objects/pack/pack-47f31d0362965ae830ad300eeded330b5d563d47.idx
-  B     .git/objects/pack/pack-47f31d0362965ae830ad300eeded330b5d563d47.pack
+  B     .git/objects/pack/pack-42986c54622d4532ce6a2a882f78ebd4daad5305.idx
+  B     .git/objects/pack/pack-42986c54622d4532ce6a2a882f78ebd4daad5305.pack
  !????? .git/packed-refs
  !????? .git/refs/heads/master
- !????? .git/refs/remotes/origin/master
+ !????? .git/refs/remotes/origin/HEAD
  !????? .gitignore
   N     LICENSE.txt
  !????? maven-eclipse.xml
@@ -200,11 +190,6 @@ Archives:
 &lt;/launchConfiguration&gt;
 
  =======================================================================
- ==.git/COMMIT_EDITMSG
- =======================================================================
-Add initial .gitignore file
-
- =======================================================================
  ==.git/config
  =======================================================================
 [core]
@@ -213,10 +198,12 @@ Add initial .gitignore file
 	bare = false
 	logallrefupdates = true
 	ignorecase = true
-[branch &quot;master&quot;]
 [remote &quot;origin&quot;]
-	url = git@github.com:ielfatmi/mindmap-maven-plugin.git
 	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git@github.com:ielfatmi/mindmap-maven-plugin.git
+[branch &quot;master&quot;]
+	remote = origin
+	merge = refs/heads/master
 
  =======================================================================
  ==.git/description
@@ -547,55 +534,31 @@ allowmodifytag=$(git config --bool hooks.allowmodifytag)
  =======================================================================
  ==.git/logs/HEAD
  =======================================================================
-0000000000000000000000000000000000000000 449be512528bd529873ff21cdc0e0138145b50d6 Issam EL FATMI &lt;elfatmi.issam@gmail.com&gt; 1321727005 +0100	clone: from git@github.com:ielfatmi/mindmap-maven-plugin
-449be512528bd529873ff21cdc0e0138145b50d6 581daee47ff22c1ba52a475b3cf4c53cde6a3161 Issam EL FATMI &lt;elfatmi.issam@gmail.com&gt; 1321727560 +0100	commit: Add initial .gitignore file
+0000000000000000000000000000000000000000 5894579ee7dcf5ddb5b35e139077eb1b5ef53a2c Issam EL FATMI &lt;elfatmi.issam@gmail.com&gt; 1321733968 +0100	clone: from git@github.com:ielfatmi/mindmap-maven-plugin.git
 
  =======================================================================
  ==.git/logs/refs/heads/master
  =======================================================================
-0000000000000000000000000000000000000000 449be512528bd529873ff21cdc0e0138145b50d6 Issam EL FATMI &lt;elfatmi.issam@gmail.com&gt; 1321727005 +0100	clone: from git@github.com:ielfatmi/mindmap-maven-plugin
-449be512528bd529873ff21cdc0e0138145b50d6 581daee47ff22c1ba52a475b3cf4c53cde6a3161 Issam EL FATMI &lt;elfatmi.issam@gmail.com&gt; 1321727560 +0100	commit: Add initial .gitignore file
-
- =======================================================================
- ==.git/logs/refs/remotes/origin/master
- =======================================================================
-0000000000000000000000000000000000000000 581daee47ff22c1ba52a475b3cf4c53cde6a3161 Issam EL FATMI &lt;elfatmi.issam@gmail.com&gt; 1321727677 +0100	update by push
-
- =======================================================================
- ==.git/objects/0b/be17671e2453dbd83843e81e7e95e5eab37401
- =======================================================================
-x?
-&#xbb;&#xd5;?@@??P&#xc1;T&#xb0;?&#xb7;&#xcb;&#xa8;?
-&#x192;&#x2d9;&#xdc;5&#x178;&#xfc;&#x178;&#xd1;Q&gt;&#xd4;&#xaf;6-[?O???&#x2265;*~?&#x201e;u&#xa5;,&#x222b;&#xf1;&#xa2;&#xc0;?uG&#x2265;&#xeb;&#x220f;&#x2202;r!8&#xb1;&#xa1;=&#xca;&#x201e;&#xf8;$?&#xda;&#xc4;&#x2020;&#xb1;?&#xaf;MJ.&#xcc;&#xc4;&#xe8;&#xd9;?f_?&gt;
-
- =======================================================================
- ==.git/objects/52/2f31cbae2ba9c32bbe0f4ede0a274adcfa00b0
- =======================================================================
-x?+)JMU024g040031Q&#x2013;K&#x153;,&#x2026;L&#x153;&#xc0;/Je&#x2021;&#xfb01;'&#xfb;.&#xdf;?|&#x2da;&#xdc;&#xd6;&#xdb;?&#x3c0;&#x222b;&#xa9;O_m.a&#xd1;&#x2122;&#xda;&#xd2;tv&#x131;?v&#x2019;+&#xa9;(a&#xf8ff;t&#x25ca;&#xae;&#xd8;&#xe9;9?+&#x25ca;]&#x2260;k&#xb5;&#xd9;&#x2206;|#?1^&#xae;2?&#x2c7;?&#x2020;B&#x221e;*&#xca;&#x201d;&#xe6;&#xce;kcX&#xc9;&#xe6;&#xff;t&#xc2;(^Zw&#x3c0;&#xb5;8&#xf6;?&#x2122;*&#xbb;&#x2019;&#x2014;&#x2248;&#x25ca;U/7&#xd6;&#xa1;@u*&#xc0;&#xd6;+&#x201d;&#xb6;&#x2c7;&#xeb;&#xc0;&#xee;&#x2044;&#x2265;&#x178;&#x2030;&#xb0;&#xe3;&#xd3;&#xe1;&#x221a;@E&#xca;&#xb6;&#xb6;
-?&#x2d8;&#x3c0;z?&#x3c0;9?&#xce;
-,d&#xa7;?6;+?-&#x2d8;&#x2da;&#xba;w&#xc0;&#xd4;L&#xb0;M&#xf8;M?&#xc4;@&#xb0;&#x220f;(&#xf4;a&#x2019;&#x201e;}&#xd8;&#x2db;&#xd8;xT&#xd9;-&#xf9;g&#xe6;?&#x221a;&#x2018;b&#xaa;&#x153;&#xe1;&quot;?&#xf6;gUJ
-
- =======================================================================
- ==.git/objects/58/1daee47ff22c1ba52a475b3cf4c53cde6a3161
- =======================================================================
-x?&#x2022;&#xe9;&#xd5;&#xa0;&#xac;0??&#xf8;s&#xfb;b&#xd4;B&#x178;l&#xed;&#x2db;&#xc4;&#xe0;???&#x3a9;}/&#x221e;I65&#x2013;&#xa5;R&#x201e;&#x2da;[&#xfc;&#xa1;&#x201d;&#xbf;?&#xdc;	K)&#x3c0;?&#x3c0;&#x2c6;&#xd8;&#xc6;&quot;&#x2021;&#xe0;&#xed;&#x2014;&#xa1;&#x2265;&#xea;&#xc1;!?&#xda;^0Y&#xe2;&#xc7;L&#xf9;&#xc2;??#zTO^e&#xc6;`&#xcc;&#x2021;&#x2248;ir&#x2018;&#x2da;&#xcb;h&#xcb;;&#xec;?&#xc8;??
-j&#x201d;k&#xce;&#xba;&#x221a;&#xff;*~&#x25ca;&#xab;&#x2264;&#xac;&#x131;&#x131;&#x201a;?&#xc1;?\N&#x2c7;&#x2dc;+&#xcf;eJ\Kn&#xda;&#x25ca;?&#xab;&#xac;yj&#xac;R?&#x2020;
-&#xc8;&#xe9;:&#x25ca;&quot;&#xcf;P#&#x2122;&#xd5;n&#xdf;U~i&#xae;S&#xe5;&#xea;&#xc1;\3O&#x2013;&#xe5;?&#xab;yY?R&#xfb;D}???P&#x201d;
+0000000000000000000000000000000000000000 5894579ee7dcf5ddb5b35e139077eb1b5ef53a2c Issam EL FATMI &lt;elfatmi.issam@gmail.com&gt; 1321733968 +0100	clone: from git@github.com:ielfatmi/mindmap-maven-plugin.git
 
  =======================================================================
  ==.git/packed-refs
  =======================================================================
+# pack-refs with: peeled 
 44344952fb33904ffb58c13d256d72df8d349ae3 refs/tags/mindmap-maven-plugin-1.0.0
+^3307407e5840a912975036f4888c7028d6c684ba
+5894579ee7dcf5ddb5b35e139077eb1b5ef53a2c refs/remotes/origin/master
+89799999adec19f3df72d945e76bb73a541838be refs/remotes/origin/gh-pages
 
  =======================================================================
  ==.git/refs/heads/master
  =======================================================================
-581daee47ff22c1ba52a475b3cf4c53cde6a3161
+5894579ee7dcf5ddb5b35e139077eb1b5ef53a2c
 
  =======================================================================
- ==.git/refs/remotes/origin/master
+ ==.git/refs/remotes/origin/HEAD
  =======================================================================
-581daee47ff22c1ba52a475b3cf4c53cde6a3161
+ref: refs/remotes/origin/master
 
  =======================================================================
  ==.gitignore
@@ -634,7 +597,7 @@ Downloads
 --------
 
 The plugin is available in maven central repository:
-http://repo2.maven.org/maven2/fr/xebia/maven/plugins/mindmap-maven-plugin/
+[http://repo2.maven.org/maven2/fr/xebia/maven/plugins/mindmap-maven-plugin/](http://repo2.maven.org/maven2/fr/xebia/maven/plugins/mindmap-maven-plugin/).
 
 
 Integrating with Maven's build lifecycle
@@ -667,6 +630,11 @@ Standalone usage examples
 	with filtering :
 	mvn fr.xebia.maven.plugins:mindmap-maven-plugin:1.0.0-SNAPSHOT:mindmap -DgroupIdsFilteringREGEXMatch=fr.xebia
 	
+Documentations
+--------
+   
+Plugin documentation:
+[http://ielfatmi.github.com/mindmap-maven-plugin/plugin-info.html](http://ielfatmi.github.com/mindmap-maven-plugin/plugin-info.html).
 </pre></div></div>
       </div>
     </div>
