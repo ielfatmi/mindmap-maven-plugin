@@ -48,33 +48,48 @@ import org.apache.velocity.tools.generic.SortTool;
 public class MindmapMojo extends AbstractMojo {
     /** @component */
     private org.apache.maven.artifact.factory.ArtifactFactory artifactFactory;
+
     /**
      * @component
      * @required
      * @readonly
      */
     private ArtifactMetadataSource artifactMetadataSource;
+
     /**
      * @component
      * @required
      * @readonly
      */
     private ArtifactCollector artifactCollector;
+
     /**
      * @component
      * @required
      * @readonly
      */
     private DependencyTreeBuilder treeBuilder;
-    /** @parameter default-value="${localRepository}" */
-    private ArtifactRepository localRepository;
+
     /**
+     * The repository used for artifact handling.
+     * 
+     * @parameter default-value="${localRepository}"
+     */
+    private ArtifactRepository localRepository;
+
+    /**
+     * The target maven project for the mindmap-maven-plugin.
+     * 
      * @parameter default-value="${project}"
      */
     private MavenProject project;
 
     /**
+     * The parameter used to filter the result of the mind map at generation
+     * time by artifact's group id.
+     * 
      * @parameter expression="${groupIdsFilteringREGEXMatch}"
+     *            default-value="None"
      */
     private String groupIdsFilteringREGEXMatch = null;
 
