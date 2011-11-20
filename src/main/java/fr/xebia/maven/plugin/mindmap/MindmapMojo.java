@@ -88,8 +88,7 @@ public class MindmapMojo extends AbstractMojo {
      * The parameter used to filter the result of the mind map at generation
      * time by artifact's group id.
      * 
-     * @parameter expression="${groupIdsFilteringREGEXMatch}"
-     *            default-value="None"
+     * @parameter expression="${groupIdsFilteringREGEXMatch}" default-value=""
      */
     private String groupIdsFilteringREGEXMatch = null;
 
