@@ -26,38 +26,15 @@
               <body>
                 <p>
                   ## Set grey color for groupId
-                  <font color="#b2b2b2">$node.artifact.groupId</font>
+                  <font color="#cccccc">$node.artifact.groupId</font>
                 </p>
                 <p>
-                  ## Setting artifactId and scope
-                  ## No scope defined for the root node. It's the principal artifact 
-                  #if (!$node.artifact.scope)
-                    <b>$node.artifact.artifactId</b>
-                  #end
-                  #if ($node.artifact.scope)
-                    
-                    ## Set red color for artifactId if scope equals to runtime
-                    #if ($node.artifact.scope == 'runtime')
-                      <b><font color="#cc0033">$node.artifact.artifactId</font></b> 
-                      <font color="#b2b2b2"><small>[<i>$node.artifact.scope</i>]</small></font>
-                    #end
-                    
-                    ## Set blue color for artifactId if scope equals to compile
-                    #if ($node.artifact.scope == 'compile')
-                      <b><font color="#0033cc">$node.artifact.artifactId</font></b>
-                      <font color="#b2b2b2"><small>[<i>$node.artifact.scope</i>]</small></font>
-                    #end
-                    
-                    ## Set green color for artifactId if scope equals to test
-                    #if ($node.artifact.scope == 'test')
-                      <b><font color="#33cc00">$node.artifact.artifactId</font></b>
-                      <font color="#b2b2b2"><small>[<i>$node.artifact.scope</i>]</small></font>
-                    #end
-                  #end
+                 ## Set bold style for artifactId
+                  <b>$node.artifact.artifactId</b>
                 </p>
                 <p>
                   ## Set grey color for version
-                  <small><font color="#b2b2b2">$node.artifact.version</font></small>
+                  <small><font color="#cccccc">$node.artifact.version</font></small>
                 </p>
               </body>
             </html>
