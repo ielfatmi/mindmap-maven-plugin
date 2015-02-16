@@ -90,6 +90,7 @@
             <exclude>.*/**</exclude>
             <exclude>maven-eclipse.xml</exclude>
             <exclude>README.md</exclude>
+            <exclude>*.iml</exclude>
           </excludes>
         </configuration>
         <executions>
